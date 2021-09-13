@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html xmlns ="http://www.w3.org./1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<meta charset="utf-8">
+<title>Arenas</title>
+
+</head>
+<body>
+
+
+
+<form action="#" th:action="@{/cArena}" th:object="${arena}" method="post">
+    <p>Id: <input type="text" th:field="*{arenaId}" /></p>
+    <p>Tipo campo: <input type="text" th:field="*{tipoCampo}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" />
+    </p>
+</form>
+
+
+<a href="/lArena">Consultar arenas</a>
+
+
+</body>
+
+</html>
